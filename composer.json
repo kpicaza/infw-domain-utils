@@ -1,0 +1,32 @@
+{
+  "name": "infw/domain-utils",
+  "license": "proprietary",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../*"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "league/event": "^2.1.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  },
+  "suggest": {
+    "symfony/event-dispatcher": "^4 If you want to use symfony implementation",
+    "league/event": "^2.1 If you want to use league event implementation",
+    "league/tactician": "^1.0 If you want to use league tactician domain event emitter and/or pdo transactional middleware"
+  },
+  "autoload": {
+    "psr-4": {
+      "InFw\\DomainUtils\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "InFw\\DomainUtils\\Tests\\": "tests"
+    }
+  }
+}
